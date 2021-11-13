@@ -1,0 +1,7 @@
+KUKA KR 340 R3330
+Capacidad de carga = 340 Kg (nominal) 418 Kg (máxima)
+Alcance horizontal = 3326 mm
+Alcance vertical = 3871 mm
+Repetibilidad = ±0.08 mm
+Software = KR C4 – KR C5
+Protección IP = IP65
