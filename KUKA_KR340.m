@@ -10,8 +10,8 @@ L5 = 15.25;
 L6 =  2.90;
 % Definición de los eslabones
 link(1) = Link('revolute', 'alpha',   +pi, 'a',   0, 'd', -L1,  'offset',     0, 'qlim', [-185*pi/180,  185*pi/180], 'modified');
-link(2) = Link('revolute', 'alpha', -pi/2, 'a',  L2, 'd',   0,  'offset', -pi/2, 'qlim', [-130*pi/180,   20*pi/180], 'modified');
-link(3) = Link('revolute', 'alpha',     0, 'a',  -L3, 'd',   0,  'offset',     0, 'qlim', [-100*pi/180,  144*pi/180], 'modified');
+link(2) = Link('revolute', 'alpha', +pi/2, 'a',  L2, 'd',   0,  'offset', -pi/2, 'qlim', [-130*pi/180,   20*pi/180], 'modified');
+link(3) = Link('revolute', 'alpha',     0, 'a',  L3, 'd',   0,  'offset',     0, 'qlim', [-100*pi/180,  144*pi/180], 'modified');
 link(4) = Link('revolute', 'alpha', +pi/2, 'a', -L4, 'd', -L5,  'offset',     0, 'qlim', [-350*pi/180,  350*pi/180], 'modified');
 link(5) = Link('revolute', 'alpha', -pi/2, 'a',   0, 'd',   0,  'offset',     0, 'qlim', [-120*pi/180,  120*pi/180], 'modified');
 link(6) = Link('revolute', 'alpha', +pi/2, 'a',   0, 'd',   0,  'offset',     0, 'qlim', [-350*pi/180,  350*pi/180], 'modified');
@@ -26,5 +26,6 @@ Kuka_KR340.tool = T_TCPa3;
 hold on
 Kuka_KR340.plot([0 0 0 0 0 0],'workspace',[-10 25.00 -10 10 -10 30.00],'noa','jaxes', 'view',[30 30])
 trplot(eye(4), 'width',2,'arrow')
+Kuka_KR340.teach([0 0 0 0 0 0])
 axis([-10 25.00 -10 10 -10 30.00]);
 hold off
