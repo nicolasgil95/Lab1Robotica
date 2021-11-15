@@ -11,4 +11,4 @@ for i=1:6
 end
 L=SerialLink(l,'name','KUKA')
 clf;hold on;
-L.plot([0,0,0,0,0,0],'workspace',[-33.26 33.26 -33.26 33.26 38.71-47.97 38.71],'view',[30 30],'nowrist');
+L.plot([0,-pi/2,pi/2,0,0,0],'workspace',[-33.26 33.26 -33.26 33.26 38.71-47.97 38.71],'view',[30 30],'nowrist');
